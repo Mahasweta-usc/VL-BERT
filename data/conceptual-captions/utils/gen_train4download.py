@@ -7,6 +7,7 @@ with open('Train_GCC-training.tsv') as fp:
     for cnt, line in enumerate(fp):
         s = line.split('\t')
         captions.append(s[0].split(' '))
+        print(s)
         urls.append(s[1][:-1])
         
 with open('train4download.txt', 'w') as fp:
