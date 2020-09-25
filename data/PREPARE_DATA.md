@@ -38,6 +38,20 @@ code_root/
 
 ### Conceptual Captions
 See [ReadMe.txt](./conceptual-captions/ReadMe.txt).
+Getting up and running custom instructions using docker:
+1. AWS Ubuntu 16.04 image
+2. docker pull bvlc/caffe:gpu
+3. docker run -t -d --gpus all --name instance-1 -ti bvlc/caffe:gpu   #https://stackoverflow.com/questions/29599632/docker-container-is-not-running/49204476
+4. #docker restart instance-1 
+docker exec -it instance-1 /bin/bash
+5. pip install future Cython numpy Pillow
+6. pip install opencv-python==4.2.0.32
+7. sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+sudo apt-get install — no-install-recommends libboost-all-dev
+sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
+sudo pip3 install protobuf
+8. pip install -U scikit-image
+9. build as instructions
 
 ### English Wikipedia & BooksCorpus
 * Wikipedia: [GoogleDrive](https://drive.google.com/file/d/1rZJ-Nj_SSqwu85tME3wbN8tfGhljfAsf/view?usp=sharing) / [BaiduPan](https://pan.baidu.com/s/1HSgUZXRESxVnx9ATOHwSrQ)
