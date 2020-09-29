@@ -1,8 +1,6 @@
 #!/usr/bin/env/
-cd conceptual-captions/utils/
+cd /workspace/VL-BERT/data/conceptual-captions/utils/
 python gen_train4download.py
 sh download_train.sh
-cd ../train_image
-zip -0 ../train_image.zip ./*
-cd ../utils/
+zip -0 /workspace/VL-BERT/data/conceptual-captions/train_image.zip /workspace/VL-BERT/data/conceptual-captions/train_image/*
 python gen_train_image_json.py
