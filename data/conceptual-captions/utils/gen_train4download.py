@@ -12,7 +12,7 @@ with open('Train_GCC-training.tsv') as fp:
         
 with open('train4download.txt', 'w') as fp:
     for cnt, url in enumerate(urls):
-        fp.write("../train_image/{:08d}.jpg\t\"{}\"\n".format(cnt, url))
+        fp.write("../train_image/{:08d}.png\t\"{}\"\n".format(cnt, url))
 
 if not os.path.exists('../train_image'):
     os.makedirs('../train_image')
